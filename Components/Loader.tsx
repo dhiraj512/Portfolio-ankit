@@ -27,7 +27,7 @@ const Loader = () => {
         <div>
         <HashLoader 
              color="#36d7b7"  
-             size={50}
+             size={49}
         />
         
           
