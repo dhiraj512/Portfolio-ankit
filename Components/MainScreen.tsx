@@ -1,12 +1,12 @@
 import React from 'react'
 import Image from 'next/image'
-import Techstack from '../Components/Techstack'
-import { projects as projectsData } from "../Components/Data/data";
+import Techstack from './Techstack'
+import { projects as projectsData } from "./Data/data";
 import { useState } from 'react';
 
-import Experience from '../Components/Experience';
-import { work as workdata } from '../Components/Data/experience';
-import Footer from '../Components/Footer';
+import Experience from './Experience';
+import { work as workdata } from './Data/experience';
+import Footer from './Footer';
 function MainScreen() {
   const [projects, setProjects] = useState(projectsData);
   const [work ,SetWork] = useState(workdata)
@@ -33,9 +33,9 @@ function MainScreen() {
       </div>
       <div className = " bg-gradient-to-r from-white  to-teal-700 w-16 h-2 rounded-xl"></div>
      <div className='mt-5 block overflow-hidden rounded-2xl bg-white/5 p-7 shadow-surface-elevation-low transition duration-300 hover:bg-white/10 hover:shadow-surface-elevation-medium focus:outline-none focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-rose-500/70'>
-     <h1 className=' font-extrabold text-transparent text-3xl bg-clip-text bg-gradient-to-r from-[#BDFFF3] to-[#4AC29A]'>Hi, I'm Ankit Singh!</h1>
+     <h1 className=' font-extrabold text-transparent text-3xl bg-clip-text bg-gradient-to-r from-[#BDFFF3] to-[#4AC29A]'>Hi, Im Ankit Singh!</h1>
      <p className='mt-3 text-xl text-[#b6b6b9] sm:mt-9 tracking-wide '>
-     I am a Frontend Developer 👨🏻‍💻 who loves to build awesome Web Apps💻 / Apps📱.I'm a 3rd year Computer Science & Engineering Undergraduate Student looking for Internship Opportunities.
+     I am a Frontend Developer 👨🏻‍💻 who loves to build awesome Web Apps💻 / Apps📱.Im a 3rd year Computer Science & Engineering Undergraduate Student looking for Internship Opportunities.
      </p>
      </div>
       </div>
