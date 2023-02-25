@@ -2,9 +2,9 @@ import React from "react";
 import Head from "next/head";
 import Loader from "../Components/Loader";
 import MainScreen from "./MainScreen";
-import type { NextPage } from "next";
 
-const Home: NextPage = () => {
+
+export default function Home() {
   const [showAnimation, setShowAnimation] = React.useState(true);
   React.useEffect(() => {
     setTimeout(() => {
@@ -41,5 +41,3 @@ const Home: NextPage = () => {
     );
   }
 }
-
-export default Home
