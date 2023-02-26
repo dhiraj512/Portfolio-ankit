@@ -14,7 +14,7 @@ const Footer = () => {
      
               <div className='flex flex-col justify-center items-center  md:flex-row  mb-5 mt-4'>
 
-                  <div className='flex flex-row mt-4 md:mt-0 space-x-3 gap-3'>
+                  <div className='flex flex-row mt-4 md:mt-0 space-x-3 gap-2'>
                       {social_links.map((e, i) => {
                           return <Buttons key={i} link={e.link} name={e.name} />;
                       })}
