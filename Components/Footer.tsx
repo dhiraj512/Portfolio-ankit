@@ -11,29 +11,17 @@ const Footer = () => {
 
           </div>
       </div>
-      <div className={'mb-6 p-4 overflow-hidden rounded-xl bg-white/5 relative bottom-0 mt-4 shadow-surface-elevation-low transition duration-300 hover:bg-white/10 hover:shadow-surface-elevation-medium focus:outline-none focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-rose-500/70 '}>
-              <div className='flex flex-col md:flex-row justify-between mb-5'>
-                  <div className='flex flex-col md:flex-row justify-between'>
-                      <div className='text-sm text-[#6e6e78] '>
-                          Made By
+     
+              <div className='flex flex-col justify-center items-center  md:flex-row  mb-5 mt-4'>
 
-                          <span className='text-[#c4c4cc] pl-1 hover:text-neutral-100  ease-linear duration-100'>
-                              Ankit
-                          </span>
-
-                      </div>
-
-
-                  </div>
-
-                  <div className='flex flex-row mt-4 md:mt-0 space-x-3'>
+                  <div className='flex flex-row mt-4 md:mt-0 space-x-3 gap-3'>
                       {social_links.map((e, i) => {
                           return <Buttons key={i} link={e.link} name={e.name} />;
                       })}
                   </div>
               </div>
 
-          </div></>
+          </>
     
   );
 }
