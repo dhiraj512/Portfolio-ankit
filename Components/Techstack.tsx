@@ -1,5 +1,9 @@
 import React from 'react'
 import Image from 'next/image';
+import {IoLogoJavascript} from 'react-icons/io'
+import {SiTypescript,SiJava,SiExpress,SiReact,SiRedux,SiTailwindcss} from 'react-icons/si'
+import {TbBrandNextjs,TbBrandReactNative} from 'react-icons/Tb'
+import {FaNodeJs} from 'react-icons/fa'
 function Techstack() {
   return (
     <div className="mt-7 ">
@@ -13,52 +17,54 @@ function Techstack() {
 
               
                <div className="  flex  bg-white/5 text=[#b6b6b9] items-center px-1.5 py-2 rounded-md text-base hover:bg-white/10 hover:shadow-surface-elevation-medium">
-               <Image src='/Tech/js.webp' alt="" height={23} width={23} className='rounded-sm'/>
+               <IoLogoJavascript color='#d8be4b' />
                <p className='ml-2'>JavaScript</p> 
                </div>
 
                <div className="  flex  bg-white/5 text=[#b6b6b9] items-center px-1.5 py-2 rounded-md text-base hover:bg-white/10 hover:shadow-surface-elevation-medium">
-               <Image src='/Tech/Ts.png' alt="" height={23} width={23} className='rounded-sm'/>
+            
+               <SiTypescript color ='#38bdf8'/>
                <p className='ml-2'>Typescript</p> 
                </div>
 
                <div className="  flex  bg-white/5 text=[#b6b6b9] items-center px-2.5 py-2 rounded-md text-base hover:bg-white/10 hover:shadow-surface-elevation-medium">
-               <Image src='/Tech/java.png' alt="" height={23} width={23} className='rounded-sm'/>
+               
+               <SiJava size ={24}/>
                <p className='ml-4'>Java</p> 
                </div>
 
                <div className="  flex  bg-white/5 text=[#b6b6b9] items-center px-1.5 py-2 rounded-md text-base hover:bg-white/10 hover:shadow-surface-elevation-medium">
-               <Image src='/Tech/next.png' alt="" height={23} width={23} className='rounded-sm'/>
+               <TbBrandNextjs size={25}/>
                <p className='ml-3'>NextJs</p> 
                </div>
 
                <div className="  flex  bg-white/5 text=[#b6b6b9] items-center px-1.5 py-2 rounded-md text-base hover:bg-white/10 hover:shadow-surface-elevation-medium">
-               <Image src='/Tech/node.webp' alt="" height={28} width={23} className='rounded-sm'/>
+               <FaNodeJs size={20} color ="#026e00"/>
                <p className='ml-4'>Node Js</p> 
                </div>
 
                <div className="  flex  bg-white/5 text=[#b6b6b9] items-center px-1.5 py-2 rounded-md text-base hover:bg-white/10 hover:shadow-surface-elevation-medium">
-               <Image src='/Tech/express.svg' alt="" height={23} width={23} className='rounded-sm'/>
+               <SiExpress size={20} />
                <p className='ml-2'>Express Js</p> 
                </div>
 
                <div className="  flex  bg-white/5 text=[#b6b6b9] items-center px-1.5 py-2 rounded-md text-base hover:bg-white/10 hover:shadow-surface-elevation-medium">
-               <Image src='/Tech/react.svg' alt="" height={23} width={23} className='rounded-sm'/>
+               <SiReact size={20} color ='#38bdf8'/>
                <p className='ml-3'>React</p> 
                </div>
 
                <div className="  flex  bg-white/5 text=[#b6b6b9] items-center px-1.5 py-2 rounded-md text-base hover:bg-white/10 hover:shadow-surface-elevation-medium">
-               <Image src='/Tech/react.svg' alt="" height={23} width={23} className='rounded-sm'/>
+               <TbBrandReactNative size={20} color ='#38bdf8'/>
                <p className='ml-2'>ReactNative</p> 
                </div>
 
                <div className="  flex  bg-white/5 text=[#b6b6b9] items-center px-1.5 py-2 rounded-md text-base hover:bg-white/10 hover:shadow-surface-elevation-medium">
-               <Image src='/Tech/redux.svg' alt="" height={23} width={23} className='rounded-sm'/>
+               <SiRedux size={20} color = '#764abc'/>
                <p className='ml-3'>Redux</p> 
                </div>
 
                <div className="  flex  bg-white/5 text=[#b6b6b9] items-center px-1.5 py-2 rounded-md text-base hover:bg-white/10 hover:shadow-surface-elevation-medium">
-               <Image src='/Tech/TailwindCSS.png' alt="" height={23} width={23} className='rounded-sm'/>
+               <SiTailwindcss size={20} color ='#38bdf8'/>
                <p className='ml-2'>TailwindCss</p> 
                </div>
           </div>
