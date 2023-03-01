@@ -2,7 +2,7 @@ import React from 'react'
 import Image from 'next/image';
 import {IoLogoJavascript} from 'react-icons/io'
 import {SiTypescript,SiJava,SiExpress,SiReact,SiRedux,SiTailwindcss} from 'react-icons/si'
-import {TbBrandNextjs,TbBrandReactNative} from 'react-icons/Tb'
+import {TbBrandNextjs,TbBrandReactNative} from 'react-icons/tb'
 import {FaNodeJs} from 'react-icons/fa'
 function Techstack() {
   return (
