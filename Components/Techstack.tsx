@@ -13,7 +13,7 @@ function Techstack() {
 
               
                <div className="  flex  bg-white/5 text=[#b6b6b9] items-center px-1.5 py-2 rounded-md text-base hover:bg-white/10 hover:shadow-surface-elevation-medium">
-               <Image src='/Tech/js.png' alt="" height={23} width={23} className='rounded-sm'/>
+               <Image src='/Tech/js.webp' alt="" height={23} width={23} className='rounded-sm'/>
                <p className='ml-2'>JavaScript</p> 
                </div>
 
