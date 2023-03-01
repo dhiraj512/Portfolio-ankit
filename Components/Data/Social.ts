@@ -13,10 +13,6 @@ export const social_links: social[] =[
         name: "Linkdln",
     },
     {
-        link: "https://leetcode.com/ankitsingh07/",
-        name: "Leetcode",
-      },
-    {
         link: "https://twitter.com/ankit20020",
         name: "Twitter",
     },
