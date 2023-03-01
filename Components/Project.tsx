@@ -4,7 +4,7 @@ import { data } from "./Data/data";
 import { AiFillGithub, AiFillProject, AiOutlineRight } from 'react-icons/ai';
 import { FunctionComponent, useState } from "react";
 import Link from 'next/link';
-import Image from 'next/image';
+
 const Techstack:FunctionComponent<{
   project: data;
 }> = ({
@@ -28,11 +28,11 @@ const Techstack:FunctionComponent<{
 
         <div className=" p-7">
            <img src = {image} alt = "IMAGE" className='w-full rounded-md h-40 object-cover object-center mb-3'/>
-          {/* <h5 className="mb-2 text-2xl font-bold tracking-wide text-gray-900 dark:text-white">{name}</h5> */}
+          
           <h5 className="mb-2 text-transparent font-bold text-2xl bg-clip-text bg-gradient-to-r from-[#BDFFF3] to-[#4AC29A]">{name}</h5>
 
 
-          {/* <div className = " bg-gradient-to-r from-white  to-teal-700  w-24 h-2 rounded-xl"></div> */}
+          
 
           <p className="   text-xl text-[#b6b6b9] sm:mt-4 tracking-wide">{description}</p>
           <div className='mt-4'>

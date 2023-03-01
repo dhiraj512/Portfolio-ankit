@@ -5,10 +5,6 @@ import { motion, AnimatePresence } from "framer-motion";
 
 
 import HashLoader from "react-spinners/HashLoader";
-
-
-
-
 const Loader = () => {
   return (
     <AnimatePresence>

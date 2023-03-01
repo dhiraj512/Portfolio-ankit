@@ -16,30 +16,24 @@ const Home: NextPage = () => {
     return (
       <div className={``}>
         <Head>
-        <title>Ankit Portfolio</title>
-        <link rel='icon' href='/favicon.ico' />
-        <meta name="author" content="Ankit Singh"></meta>
+          <title>Ankit Portfolio</title>
+          <link rel="icon" href="/favicon.ico" />
         </Head>
-        <Loader/>
+        <Loader />
+      </div>
+    );
+  } else {
+    return (
+      <div className="min-h-screen bg-neutral-900 text-slate-200 ">
+        <Head>
+          <title>Ankit Portfolio</title>
+          <link rel="icon" href="/favicon.ico" />
+
+        </Head>
+        <MainScreen />
       </div>
     );
   }
-  else {
-    return (
-     
-      
-        
-      <div className='min-h-screen bg-neutral-900 text-slate-200 '>
-        
-         <MainScreen/>
+};
 
-       
-          
-          
-        </div>
-      
-    );
-  }
-}
-
-export default Home
+export default Home;

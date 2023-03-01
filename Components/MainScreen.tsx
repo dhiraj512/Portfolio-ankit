@@ -8,15 +8,12 @@ import Techstack from '../Components/Techstack';
 import Experience from './Experience';
 import { work as workdata } from './Data/experience';
 import Footer from './Footer';
-
-import MdDarkMode, { MdOutlineDarkMode, MdOutlineLightMode } from 'react-icons/md'
 function MainScreen() {
   const [projects, setProjects] = useState(projectsData);
   const [work ,SetWork] = useState(workdata);
 
   return (
     <>
-    
     <div className="max-w-screen-md mx-auto px-8 py-8 scrollbar scrollbar-thumb">
 
      <div className = " mt-10 flex ">
@@ -46,7 +43,11 @@ function MainScreen() {
      </div>
       </div>
 
+
+{/* TECHSTACK */}
 <Techstack/>
+
+
 {/* PROJECT PART */}
        <div className="mt-7">
             <div className=' font-semibold tracking-wide px-1 py-2 text-xl md:text-2xl text-slate-100  select-none'>
@@ -54,7 +55,7 @@ function MainScreen() {
             </div>
             <div className=" bg-gradient-to-r from-white  to-teal-700  w-24 h-2 rounded-xl"></div>
           </div>
-    {/* <Techstack/> */}
+  
     <div className=" flex justify-between flex-wrap flex-grow basis-1/2 relative my-3">
         {projects.map((project) => (
           <>
@@ -68,13 +69,13 @@ function MainScreen() {
 
 
 
+    {/* EXPERINCE */}
       <div className="mt-7">
             <div className=' font-semibold tracking-wide  px-1 py-2 text-xl md:text-2xl text-slate-100 select-none'>
             Experience
             </div>
             <div className=" bg-gradient-to-r from-white  to-teal-700  w-24 h-2 rounded-xl"></div>
       </div>
-    {/* EXPERINCE */}
     <div className=" flex justify-between flex-wrap flex-grow basis-1/2 relative my-3">
         {work.map((work) => (
           <>
@@ -84,13 +85,12 @@ function MainScreen() {
         ))}
       </div>
 
+{/* FOOTER */}
     <Footer/>
+
+
     </div>
-     
-
-
      </>
   )
 }
-
 export default MainScreen
