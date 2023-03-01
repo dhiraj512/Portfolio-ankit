@@ -21,17 +21,15 @@ const Loader = () => {
       >
         <div className='flex flex-row items-center italic text-base md:text-xl text-center text-[#c4c4cc] select-nones'>
           Ankit Singh Portfolio
-          
-          
-        </div>
-        <div>
+         </div>
+
+
+        <div className="mt-5">
         <HashLoader 
              color="#36d7b7"  
              size={49}
         />
-        
-          
-        </div>
+       </div>
       </motion.div>
     </AnimatePresence>
   );
