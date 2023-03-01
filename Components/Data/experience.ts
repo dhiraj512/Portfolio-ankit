@@ -17,7 +17,7 @@ export interface experience {
     {
         name:'HackOdisha by NIT Rourkela',
         certificate:'https://devfolio.co/projects/mentally-e08e',
-        description:`“Ment-Ally”, Which help's people to gain mental peace and stability.`,
+        description:`“Ment-Ally”, is one solution for all your mental problems.`,
         tags:['Hackathon'],
         
     },
