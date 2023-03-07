@@ -1,10 +1,20 @@
+import Loader from "../Components/Loader";
+import Hero from "../Components/Hero";
+import Techstack from "../Components/Techstack";
+import Project from "../Components/Project";
+import Experience from "../Components/Experience";
+import Footer from "../Components/Footer";
 import React from "react";
 import Head from "next/head";
-import Loader from "../Components/Loader";
-import MainScreen from "../Components/MainScreen";
-import type { NextPage } from "next";
+import { motion } from "framer-motion";
 
-const Home: NextPage = () => {
+const variants = {
+  hidden: { opacity: 0, y: -200 },
+  enter: { opacity: 1, y: 0 },
+  exit: { opacity: 0, y: 0 },
+}
+
+export default function Home() {
   const [showAnimation, setShowAnimation] = React.useState(true);
   React.useEffect(() => {
     setTimeout(() => {
@@ -14,26 +24,57 @@ const Home: NextPage = () => {
 
   if (showAnimation) {
     return (
-      <div className={``}>
-        <Head>
-          <title>Ankit Portfolio</title>
-          <link rel="icon" href="/favicon.ico" />
-        </Head>
-        <Loader />
-      </div>
+      <Loader />
     );
   } else {
     return (
-      <div className="min-h-screen bg-neutral-900 text-slate-200 ">
+      <>
         <Head>
-          <title>Ankit Portfolio</title>
-          <link rel="icon" href="/favicon.ico" />
-
+          <title>Ankit&apos;s Portfolio</title>
         </Head>
-        <MainScreen />
-      </div>
-    );
+        <motion.div
+          className="max-w-screen-sm mx-auto p-6 sm:p-2 scrollbar scrollbar-thumb"
+          initial="hidden"
+          animate="enter"
+          exit="exit"
+          variants={variants}
+          transition={{ type: 'linear' }}
+        >
+          <motion.div
+            className=""
+            initial={{ scale: 0.8, opacity: 0 }}
+            animate={{ scale: 1, opacity: 1 }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+          >
+            <Hero />
+          </motion.div>
+          <motion.div
+            className=""
+            initial={{ scale: 0.8, opacity: 0 }}
+            animate={{ scale: 1, opacity: 1 }}
+            transition={{ duration: 0.6, delay: 0.3 }}
+          >
+            <Techstack />
+          </motion.div>
+          <motion.div
+            className=""
+            initial={{ scale: 0.8, opacity: 0 }}
+            animate={{ scale: 1, opacity: 1 }}
+            transition={{ duration: 0.6, delay: 0.4 }}
+          >
+            <Project />
+          </motion.div>
+          <motion.div
+            className=""
+            initial={{ scale: 0.8, opacity: 0 }}
+            animate={{ scale: 1, opacity: 1 }}
+            transition={{ duration: 0.6, delay: 0.5 }}
+          >
+            <Experience />
+          </motion.div>
+          <Footer />
+        </motion.div>
+      </>
+    )
   }
-};
-
-export default Home;
+}

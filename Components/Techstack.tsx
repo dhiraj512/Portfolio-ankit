@@ -1,75 +1,59 @@
-import React from 'react'
-import {IoLogoJavascript} from 'react-icons/io'
-import {SiTypescript,SiJava,SiExpress,SiReact,SiRedux,SiTailwindcss} from 'react-icons/si'
-import {TbBrandNextjs,TbBrandReactNative} from 'react-icons/tb'
-import {FaNodeJs} from 'react-icons/fa'
-function Techstack() {
+import { IoLogoJavascript } from 'react-icons/io'
+import { SiTypescript, SiJava, SiExpress, SiReact, SiRedux, SiTailwindcss } from 'react-icons/si'
+import { TbBrandNextjs, TbBrandReactNative } from 'react-icons/tb'
+import { FaNodeJs } from 'react-icons/fa'
+
+const tagstyle = "flex gap-x-2 bg-white/5 text=[#b6b6b9] items-center px-2.5 py-1.5 rounded-md text-base hover:bg-white/10 cursor-pointer"
+export default function Techstack() {
   return (
-    <div className="mt-7 ">
-            <div className=' font-semibold tracking-wide  px-1 py-2 text-xl md:text-2xl text-slate-100 select-none'>
-             TechStack
-            </div>
-            <div className=" bg-gradient-to-r from-white  to-teal-700  w-24 h-2 rounded-xl"></div>
-
-            <div className='  mt-7 gap-x-7 gap-y-3 flex   flex-row flex-wrap pt-1 pb-3 ml-2'>
-
-
-              
-               <div className="  flex  bg-white/5 text=[#b6b6b9] items-center px-1.5 py-2 rounded-md text-base hover:bg-white/10 hover:shadow-surface-elevation-medium">
-               <IoLogoJavascript color='#d8be4b' />
-               <p className='ml-2'>JavaScript</p> 
-               </div>
-
-               <div className="  flex  bg-white/5 text=[#b6b6b9] items-center px-1.5 py-2 rounded-md text-base hover:bg-white/10 hover:shadow-surface-elevation-medium">
-            
-               <SiTypescript color ='#38bdf8'/>
-               <p className='ml-2'>Typescript</p> 
-               </div>
-
-               <div className="  flex  bg-white/5 text=[#b6b6b9] items-center px-2.5 py-2 rounded-md text-base hover:bg-white/10 hover:shadow-surface-elevation-medium">
-               
-               <SiJava size ={24}/>
-               <p className='ml-4'>Java</p> 
-               </div>
-
-               <div className="  flex  bg-white/5 text=[#b6b6b9] items-center px-1.5 py-2 rounded-md text-base hover:bg-white/10 hover:shadow-surface-elevation-medium">
-               <TbBrandNextjs size={25}/>
-               <p className='ml-3'>NextJs</p> 
-               </div>
-
-               <div className="  flex  bg-white/5 text=[#b6b6b9] items-center px-1.5 py-2 rounded-md text-base hover:bg-white/10 hover:shadow-surface-elevation-medium">
-               <FaNodeJs size={20} color ="#026e00"/>
-               <p className='ml-4'>Node Js</p> 
-               </div>
-
-               <div className="  flex  bg-white/5 text=[#b6b6b9] items-center px-1.5 py-2 rounded-md text-base hover:bg-white/10 hover:shadow-surface-elevation-medium">
-               <SiExpress size={20} />
-               <p className='ml-2'>Express Js</p> 
-               </div>
-
-               <div className="  flex  bg-white/5 text=[#b6b6b9] items-center px-1.5 py-2 rounded-md text-base hover:bg-white/10 hover:shadow-surface-elevation-medium">
-               <SiReact size={20} color ='#38bdf8'/>
-               <p className='ml-3'>React</p> 
-               </div>
-
-               <div className="  flex  bg-white/5 text=[#b6b6b9] items-center px-1.5 py-2 rounded-md text-base hover:bg-white/10 hover:shadow-surface-elevation-medium">
-               <TbBrandReactNative size={20} color ='#38bdf8'/>
-               <p className='ml-2'>ReactNative</p> 
-               </div>
-
-               <div className="  flex  bg-white/5 text=[#b6b6b9] items-center px-1.5 py-2 rounded-md text-base hover:bg-white/10 hover:shadow-surface-elevation-medium">
-               <SiRedux size={20} color = '#764abc'/>
-               <p className='ml-3'>Redux</p> 
-               </div>
-
-               <div className="  flex  bg-white/5 text=[#b6b6b9] items-center px-1.5 py-2 rounded-md text-base hover:bg-white/10 hover:shadow-surface-elevation-medium">
-               <SiTailwindcss size={20} color ='#38bdf8'/>
-               <p className='ml-2'>TailwindCss</p> 
-               </div>
-          </div>
+    <>
+      <h2 className="headings">
+        TechStack
+      </h2>
+      <div className='flex flex-row flex-wrap gap-4'>
+        <div className={tagstyle}>
+          <IoLogoJavascript color='#d8be4b' />
+          <span>JavaScript</span>
+        </div>
+        <div className={tagstyle}>
+          <SiTypescript color='#38bdf8' />
+          <span>Typescript</span>
+        </div>
+        <div className={tagstyle}>
+          <SiJava size={24} />
+          <span>Java</span>
+        </div>
+        <div className={tagstyle}>
+          <TbBrandNextjs size={25} />
+          <span>NextJs</span>
+        </div>
+        <div className={tagstyle}>
+          <FaNodeJs size={20} color="#026e00" />
+          <span>Node Js</span>
+        </div>
+        <div className={tagstyle}>
+          <SiExpress size={20} />
+          <span>Express Js</span>
+        </div>
+        <div className={tagstyle}>
+          <SiReact size={20} color='#38bdf8' />
+          <span>React</span>
+        </div>
+        <div className={tagstyle}>
+          <TbBrandReactNative size={20} color='#38bdf8' />
+          <span>ReactNative</span>
+        </div>
+        <div className={tagstyle}>
+          <SiRedux size={20} color='#764abc' />
+          <span>Redux</span>
+        </div>
+        <div className={tagstyle}>
+          <SiTailwindcss size={20} color='#38bdf8' />
+          <span>TailwindCSS</span>
+        </div>
       </div>
+    </>
   )
 }
 
-export default Techstack
 
